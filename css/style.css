@@ -232,6 +232,15 @@ color:white;
 
 }
 
+.sect5{
+  background-color: white;
+  height: 350px;;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
 
 
 
