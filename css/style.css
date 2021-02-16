@@ -90,10 +90,12 @@ h1{
   background-color: #4BA9BE;
   color:white;
   border-radius: 15px;
+  border-color: darkgoldenrod;
 }
 
+
 main{
-  height: 300px;
+  height: 900px;
 }
 
 .text-middle{
@@ -101,6 +103,7 @@ main{
   background-color:lightgrey;
   text-align: center;
 }
+
 
 
 .text-middle h4 {
@@ -244,6 +247,7 @@ color:white;
   color:white;
   border-radius: 15px;
   margin-top: 10px;
+  border-color: darkgoldenrod;
 
 }
 
@@ -272,7 +276,7 @@ color:white;
 }
 
 .right-sect6{
-  height: 494px;
+  /* height: 494px; */
   width:343px;
   background-color: white;
   margin-right: 33px;
@@ -360,14 +364,14 @@ color:white;
 .raptors{
   height: 150px;
   width: 150px;
-border-top: 4px solid blue;
+border-top: 4px solid lightblue;
  background-color: white;
 }
 .all{
-  height: 80px;
+  height: 84px;
     width: 80px;
     border-radius: 56px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     margin-top: 30px;
     margin-left: 30px;
 
@@ -375,9 +379,9 @@ border-top: 4px solid blue;
 }
 
 .far4{
-  font-size: 35px;
-  padding-top: 20px;
-    padding-left: 17px;
+  font-size: 26px;
+  padding-top: 29px;
+    padding-left: 28px;
 }
 .raptop-p{
   font-size: 14px;
@@ -398,7 +402,67 @@ text-align: center;
   background-color: black
 }
 
+.sect12{
+  /* background-color: red; */
+}
 
+.jujubi{
+  background-image: url('../images/join_now_cta_bg.jpg');
+  height: 395px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.juju-words{
+  height: 90px;
+  width: 824px;
+padding-top: 100px;
+padding-left: 419px;
+}
+
+.juju-words h2{
+  font-size: 53px;
+  color:white;
+}
+.white{
+  color:white;
+  line-height: 1.4;
+  padding-bottom:30px;
+  height: 90px;
+  width: 400px;
+
+}
+
+.sect13{
+  height: 200px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  padding-top: 74px;
+}
+.set13 h2{
+  font-size: 24px;
+  padding-left: 66px;
+  padding-bottom: 13px;
+}
+.set13 input{
+  width: 383px;
+  height: 33px;
+  padding-left: 4px;
+}
+.btbt{
+  height: 33px;
+  width: 150px;
+  background-color: black;
+  color:white;
+  margin-left: 16px;
+}
+
+.sect14{
+  height: 300px;
+  background-color: pink;
+}
 
 
 
