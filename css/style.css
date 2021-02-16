@@ -122,8 +122,40 @@ main{
 }
 
 .sect3{
-  background-color: blue;
-  height: 400px;
+  background-color: white;
+  height: 350px;;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.underl{
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: bolder;
+
+}
+
+.date{
+  font-size: 13px;
+  color:lightgrey;
+  padding-top: 5px;
+}
+
+
+.sect4{
+  display: flex;
+  justify-content: space-around;
+}
+
+.dueces{
+  padding-top: 10px;
+  height: 65px;
+  width:329px;
+  color:grey;
+  line-height: 1.4;
+
+
 }
 
 
