@@ -222,6 +222,11 @@ color:white;
   color:white;
 }
 
+.art5{
+  font-size: 30px;
+  color:white
+}
+
 .bt{
   height: 50px;
   width: 170px;
@@ -234,15 +239,81 @@ color:white;
 
 .sect5{
   background-color: white;
-  height: 350px;;
+  height: 417px;;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 
 }
 
+.sect6{
+  height: 500px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-sect6{
+  margin-left: 32px;
+
+  height: 494px;
+  width:745px;
+  background-color: yellow;
+}
+
+.right-sect6{
+  height: 494px;
+  width:343px;
+  background-color: white;
+  margin-right: 33px;
+
+}
+
+.du-right{
+  height: 121px;
+  width: 341px;
+  background-color: white;
+  margin-top: 11px;
+}
+
+.jumbxero{
+  height: 497px;
+  background-size: cover;
+  background-image: url('../images/featured_article_2_bg.jpg');
+}
+
+.tut{
+  font-size: 28px;
+}
+
+.im2{
+  padding-left: 20px;
+}
+
+.tutimg{
+  height: 90px;
+}
+
+.june{
+  display: flex;
+}
+
+.line{
+  border: 5px solid orange;
+  height: 30px;
+  width: 77px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
 
 
+.listsyy{
+  padding-top: 128px;
+  height: 90px;
+  line-height: 1.6;
+  padding-left: 87px;
+}
 
 
 
