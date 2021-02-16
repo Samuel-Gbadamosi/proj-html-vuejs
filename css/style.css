@@ -65,9 +65,35 @@ ul li{
   position: relative;
 }
 
+
+.middd-jum{
+  height: 200px;
+  width: 407px;
+  position: relative;
+  left: 125px;
+  top: 62px;
+  line-height: 3;
+}
+
+h1{
+  font-size: 50px;
+  color:white;
+}
+.middd-jum p {
+  color:white;
+  font-size: 15px;
+}
+
+.btn-no{
+  height: 45px;
+  width:158px;
+  background-color: #4BA9BE;
+  color:white;
+  border-radius: 15px;
+}
+
 main{
   height: 300px;
-  background-color: yellow;
 }
 
 .text-middle{
