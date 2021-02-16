@@ -157,7 +157,7 @@ main{
 
 .underl{
   padding-top: 5px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bolder;
 
 }
@@ -169,10 +169,6 @@ main{
 }
 
 
-.sect4{
-  display: flex;
-  justify-content: space-around;
-}
 
 .dueces{
   padding-top: 10px;
@@ -183,6 +179,60 @@ main{
 
 
 }
+
+
+.sect4{
+  height: 800px;
+  background-color: white;
+}
+.jumbo-jun{
+  position: relative;
+  top: 30px;
+  left:61px;
+  height: 600px;
+  width:90%;
+background-image: url('../images/featured_article_1_bg.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+.texts-jubo{
+  height: 90px;
+  width: 958px;
+  position: relative;
+  top: 278px;
+  left: 84px;
+  line-height: 2;
+}
+
+.art{
+font-size: 24px;
+color:white;
+}
+
+.art3{
+  color:white;
+  font-size: 41px;
+
+}
+
+.art4{
+  color:white;
+}
+
+.bt{
+  height: 50px;
+  width: 170px;
+  background-color: black;
+  color:white;
+  border-radius: 15px;
+  margin-top: 10px;
+
+}
+
+
 
 
 
