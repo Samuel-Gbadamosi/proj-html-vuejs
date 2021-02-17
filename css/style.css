@@ -10,6 +10,7 @@ body{
 
 .container{
   max-width: 1140px;
+  margin: auto;
 }
 
 
@@ -375,7 +376,7 @@ border-top: 4px solid lightblue;
     margin-top: 30px;
     margin-left: 30px;
 
-    background-color: orange;
+    background-color: coral;
 }
 
 .far4{
@@ -435,7 +436,7 @@ padding-left: 419px;
 }
 
 .sect13{
-  height: 200px;
+  height: 251px;
   background-color: lightgrey;
   display: flex;
   justify-content: center;
@@ -443,6 +444,7 @@ padding-left: 419px;
 }
 .set13 h2{
   font-size: 24px;
+  font-weight: lighter;
   padding-left: 66px;
   padding-bottom: 13px;
 }
@@ -460,11 +462,75 @@ padding-left: 419px;
 }
 
 .sect14{
-  height: 300px;
-  background-color: pink;
+  height: 550px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
 }
 
+.brunz{
+  margin-top: 50px;
+  height: 377px;
+  width: 247px;
+  background-color: WHITE;
+}
 
+.f-list{
+  line-height: 2;
+}
+
+.pd{
+  margin-top: 28px;
+}
+
+.col
+{
+  color: lightgrey;
+}
+.f-list li{
+  margin-top: 28px;
+  border: 2px solid lightgrey;
+
+  border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+.sect15{
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid lightgrey;
+}
+.left-f{
+  padding-top: 45px;
+}
+
+.right-f ul{
+  display:flex;
+  font-size: 40px;
+}
+
+.blue{
+  color: blue;
+}
+
+.ligb{
+  color: lightblue;
+}
+.lg{
+  color: orange;
+}
+.red{
+  color:red;
+}
+
+.right-f li{
+  border-radius: 30px;
+  padding: 9px;
+  padding-top: 30px;
+}
 
 
 

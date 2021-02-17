@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Avada Forum</title>
+  <!-- link vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- link vue -->
   <!-- link css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- lunk css -->
@@ -14,360 +17,409 @@
   <!-- font awesome link -->
 
 </head>
+<div id="app">
+  <body>
+    <!-- begin header -->
+    <header>
+      <div class="header-top">
+        <div class="logo-section">
+          <img class="img1" src="images/logo.png" alt="">
 
-<body>
-  <!-- begin header -->
-  <header>
-    <div class="header-top">
-      <div class="logo-section">
-        <img class="img1" src="images/logo.png" alt="">
-
-      </div>
-      <div class="sect-right">
-        <div class="list">
-          <ul>
-            <li>Home</li>
-            <li>Apple</li>
-            <li>Microsoft</li>
-            <li>Andriod</li>
-            <li>Forums</li>
-            <li>Contact us</li>
-            <li>
-              <button class="btn1"> JOIN US</button>
-            </li>
-            <li> <i class="fas fa-search"></i> </li>
-
-          </ul>
         </div>
+        <div class="sect-right" >
+          <!-- volevo usare il for in questa parte, ma non posso perche ho il buttone dentro gli li.. QUINDI SI RADDOPIA TUTTO-
+          it doubles up the buttons,so i had to do it manually -->
+          <div class="list">
+            <ul >
+              <li>{{array[0]}}</li>
+              <li>{{array[1]}}</li>
+              <li>{{array[2]}}</li>
+              <li>{{array[3]}}</li>
+              <li>{{array[4]}}</li>
+              <li>{{array[5]}}</li>
+              <li>
+                <button @click="clickme" class="btn1"> JOIN US</button>
+              </li>
+              <li> <i class="fas fa-search"></i> </li>
+
+            </ul>
+          </div>
 
 
-      </div>
-
-    </div>
-
-
-  </header>
-  <section class="sect1">
-    <div id="jumbotron">
-
-      <div class="middd-jum">
-        <h1>The Tech Forum!</h1>
-
-        <p>Discuss all the latest technology news and trend</p>
-
-        <button  class="btn-no">GET AVADA NOW! <i class="fas fa-chevron-right"></i></button>
-
-      </div>
-
-    </div>
-
-  </section>
-  <!-- finish header -->
-
-  <!-- main section -->
-  <main>
-    <div class="text-middle">
-
-      <h4>AVADA FORUM IS THE BEST PLACE TO BE</h4>
-      <p>in quis il lectus sed leo elementum faucibis in dapibus dictum.</p>
-      <p>Nulla molestie torto nect lectus beneiai,sed blandit dui finibus</p>
-      <p>lla molestie torto nect lectus beneiai,sed blandit dui jes</p>
-
-
-    </div>
-    <section class="sect2">
-      <div class="title-news">
-        <h4 class="news">PHASALUTO EGES MANTUS</h4>
-        <h3 class="news2">All the latest news</h3>
-        <p class="ns"></p>
-
-      </div>
-
-    </section>
-    <section class="sect3">
-      <div class="one">
-        <img src="images/post_feat_img_25-320x202.jpg" alt="">
-        <p class="underl">Morbi vitae dui euismond vulputate sollicitudin</p>
-        <p class="date">October 11th, 2015 | Comments off</p>
-        <div class="dueces">
-          <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
-        </div>
-
-
-
-      </div>
-      <div class="two">
-        <img src="images/post_feat_img_24-320x202.jpg" alt="">
-        <p class="underl">Vivamus pellenteque,felis qua Varius</p>
-        <p class="date">October 11th, 2015 | Comments off</p>
-        <div class="dueces">
-          <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
         </div>
 
       </div>
-      <div class="three">
-        <img src="images/post_feat_img_23-320x202.jpg" alt="">
-        <p class="underl"> Donec ornare pretium eget scelisque justo</p>
-        <p class="date">October 11th, 2015 | 2 Comments</p>
-        <div class="dueces">
-          <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
+
+
+    </header>
+    <section class="sect1">
+      <div id="jumbotron" >
+
+        <div class="middd-jum" >
+          <h1>The Tech Forum!</h1>
+
+          <p>Discuss all the latest technology news and trend</p>
+
+          <button    class="btn-no">GET AVADA NOW! <i class="fas fa-chevron-right" ></i></button>
+
         </div>
 
       </div>
 
     </section>
+    <!-- finish header -->
 
-   <section class="sect4">
-     <div class="jumbo-jun">
+    <!-- main section -->
+    <main>
+      <div class="text-middle">
 
-        <div class="texts-jubo">
+        <h4>AVADA FORUM IS THE BEST PLACE TO BE</h4>
+        <p>in quis il lectus sed leo elementum faucibis in dapibus dictum.</p>
+        <p>Nulla molestie torto nect lectus beneiai,sed blandit dui finibus</p>
+        <p>lla molestie torto nect lectus beneiai,sed blandit dui jes</p>
 
-          <h4 class="art">FEATURED ARTICLE</h4>
-          <h3 class="art3">Cras malesuada et orci eget pharetra</h3>
 
-          <p class="art4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, io lectyu</p>
+      </div>
+      <section class="sect2">
+        <div class="title-news">
+          <h4 class="news">PHASALUTO EGES MANTUS</h4>
+          <h3 class="news2">All the latest news</h3>
+          <p class="ns"></p>
 
-          <button class="bt">READ MORE <i class="fas fa-chevron-right"></i></button>
+        </div>
+
+      </section>
+      <section class="sect3">
+        <div class="one">
+          <img src="images/post_feat_img_25-320x202.jpg" alt="">
+          <p class="underl">Morbi vitae dui euismond vulputate sollicitudin</p>
+          <p class="date">October 11th, 2015 | Comments off</p>
+          <div class="dueces">
+            <p>{{duec}}</p>
+          </div>
+
 
 
         </div>
+        <div class="two">
+          <img src="images/post_feat_img_24-320x202.jpg" alt="">
+          <p class="underl">Vivamus pellenteque,felis qua Varius</p>
+          <p class="date">October 11th, 2015 | Comments off</p>
+          <div class="dueces">
+            <p>{{duec}}</p>
+          </div>
+
+        </div>
+        <div class="three">
+          <img src="images/post_feat_img_23-320x202.jpg" alt="">
+          <p class="underl"> Donec ornare pretium eget scelisque justo</p>
+          <p class="date">October 11th, 2015 | 2 Comments</p>
+          <div class="dueces">
+            <p>{{duec}}</p>
+          </div>
+
+        </div>
+
+      </section>
+
+     <section class="sect4">
+       <div class="jumbo-jun">
+
+          <div class="texts-jubo">
+
+            <h4 class="art">FEATURED ARTICLE</h4>
+            <h3 class="art3">Cras malesuada et orci eget pharetra</h3>
+
+            <p class="art4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, io lectyu</p>
+
+            <button class="bt">READ MORE <i class="fas fa-chevron-right"></i></button>
+
+
+          </div>
+       </div>
+
+     </section>
+
+     <section class="sect5">
+       <div class="one">
+         <img src="images/post_feat_img_22-320x202.jpg" alt="">
+         <p class="underl">Fusce sollicitudin nunc sed placerat varius</p>
+         <p class="date">October 11th, 2015 | Comments off</p>
+         <div class="dueces">
+           <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
+         </div>
+
+
+
+       </div>
+       <div class="two">
+         <img src="images/post_feat_img_21-320x202.jpg" alt="">
+         <p class="underl">Donec facilis sodales leo sit amet laoreet</p>
+         <p class="date">October 11th, 2015 | Comments off</p>
+         <div class="dueces">
+           <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
+         </div>
+
+       </div>
+       <div class="three">
+         <img src="images/post_feat_img_20-320x202.jpg" alt="">
+         <p class="underl"> Proin en purus sed aru alique carbinar vens
+
+
+         </p>
+         <p class="date">October 11th, 2015 | 2 Comments</p>
+         <div class="dueces">
+           <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
+         </div>
+
+       </div>
+
+
+     </section>
+
+     <section class="sect6">
+
+       <div class="left-sect6">
+
+         <div class="jumbxero">
+           <div class="listsyy">
+             <h2 class="art">REVIEWED PRODUCT</h2>
+
+             <h2 class="art5">Mauris viverra atisan ipsum eget felis prims efficitur varius</h2>
+
+             <p class="art4">in quis  amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et t mollit anim id est laborum.</p>
+
+          <button class="bt"> READ MORE   <i class="fas fa-chevron-right  "></i>   </button>
+           </div>
+
+         </div>
+
+       </div>
+       <div class="right-sect6">
+         <div class="du-right">
+           <h4 class="tut">Tutorials & Guides</h4>
+           <p class="line">  </p>
+
+         </div>
+         <div class="du-right june">
+           <div class="im">
+             <img class="tutimg" :src="src[0]" alt="">
+           </div>
+           <div class="im2">
+             <p class="underl">Donec ornare pretium eget scelisque justo</p>
+             <p class="date">{{date}}</p>
+
+           </div>
+
+         </div>
+         <div class="du-right june">
+           <div class="im">
+             <img class="tutimg" :src="src[1]" alt="">
+           </div>
+           <div class="im2">
+             <p class="underl">Donec ornare pretium eget scelisque justo</p>
+             <p class="date">{{date}}</p>
+
+           </div>
+
+         </div>
+         <div class="du-right june">
+           <div class="im">
+             <img class="tutimg" :src="src[2]" alt="">
+           </div>
+           <div class="im2">
+             <p class="underl">Donec ornare pretium eget scelisque justo</p>
+             <p class="date">{{date}}</p>
+
+           </div>
+
+         </div>
+
+       </div>
+
+     </section>
+
+   <section class="sect7">
+     <div class="sect7jnr ">
+       <h4 class="pdf">READ OUR BLOG <i class=" fas fa-arrow-right"></i></h4>
+
      </div>
 
    </section>
 
-   <section class="sect5">
-     <div class="one">
-       <img src="images/post_feat_img_22-320x202.jpg" alt="">
-       <p class="underl">Fusce sollicitudin nunc sed placerat varius</p>
-       <p class="date">October 11th, 2015 | Comments off</p>
-       <div class="dueces">
-         <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
-       </div>
-
-
-
-     </div>
-     <div class="two">
-       <img src="images/post_feat_img_21-320x202.jpg" alt="">
-       <p class="underl">Donec facilis sodales leo sit amet laoreet</p>
-       <p class="date">October 11th, 2015 | Comments off</p>
-       <div class="dueces">
-         <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
-       </div>
-
-     </div>
-     <div class="three">
-       <img src="images/post_feat_img_20-320x202.jpg" alt="">
-       <p class="underl"> Proin en purus sed aru alique carbinar vens
-
-
-       </p>
-       <p class="date">October 11th, 2015 | 2 Comments</p>
-       <div class="dueces">
-         <p>Donec finibus sit amet orci eget ultriciles,Praesent posure ante ut erat frignilla,vestibulum placerat metus mattis.Aenaean dicturm vitae nisl</p>
-       </div>
-
-     </div>
-
-
-   </section>
-
-   <section class="sect6">
-
-     <div class="left-sect6">
-
-       <div class="jumbxero">
-         <div class="listsyy">
-           <h2 class="art">REVIEWED PRODUCT</h2>
-
-           <h2 class="art5">Mauris viverra atisan ipsum eget felis prims efficitur varius</h2>
-
-           <p class="art4">in quis  amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et t mollit anim id est laborum.</p>
-
-        <button class="bt"> READ MORE   <i class="fas fa-chevron-right  "></i>   </button>
-         </div>
-
-       </div>
-
-     </div>
-     <div class="right-sect6">
-       <div class="du-right">
-         <h4 class="tut">Tutorials & Guides</h4>
-         <p class="line">  </p>
-
-       </div>
-       <div class="du-right june">
-         <div class="im">
-           <img class="tutimg" src="images/post_feat_img_23-177x142.jpg" alt="">
-         </div>
-         <div class="im2">
-           <p class="underl">Donec ornare pretium eget scelisque justo</p>
-           <p class="date">October 11th, 2015 | 2 Comments</p>
-
-         </div>
-
-       </div>
-       <div class="du-right june">
-         <div class="im">
-           <img class="tutimg" src="images/post_feat_img_22-177x142.jpg" alt="">
-         </div>
-         <div class="im2">
-           <p class="underl">Donec ornare pretium eget scelisque justo</p>
-           <p class="date">October 11th, 2015 | 2 Comments</p>
-
-         </div>
-
-       </div>
-       <div class="du-right june">
-         <div class="im">
-           <img class="tutimg" src="images/post_feat_img_20-177x142.jpg" alt="">
-         </div>
-         <div class="im2">
-           <p class="underl">Donec ornare pretium eget scelisque justo</p>
-           <p class="date">October 11th, 2015 | 2 Comments</p>
-
-         </div>
-
-       </div>
+   <section class="sect8">
+     <div class="title-news">
+       <h4 class="news">PHASELESUS EGET METUS</h4>
+       <h3 class="news2">FORUM SECTION</h3>
+       <p class="ns2"></p>
 
      </div>
 
    </section>
 
- <section class="sect7">
-   <div class="sect7jnr ">
-     <h4 class="pdf">READ OUR BLOG <i class=" fas fa-arrow-right"></i></h4>
+   <section class="sect9">
+     <div class="raptors">
+       <ul>
+         <li class="all"><i class="far  far4 fa-sticky-note"></i></li>
+         <li class="raptop-p">News & Community</li>
+       </ul>
 
-   </div>
+     </div>
+     <div class="raptors">
+       <ul>
+         <li class="all"><i class="far4 fab  fa-apple"></i></li>
+         <li class="raptop-p">Apple Forum</li>
+       </ul>
 
- </section>
+     </div>
+     <div class="raptors">
+       <ul>
+         <li class="all"><i class=" far4 fab fa-microsoft"></i></li>
+         <li class="raptop-p">Microsoft Forum</li>
+       </ul>
 
- <section class="sect8">
-   <div class="title-news">
-     <h4 class="news">PHASELESUS EGET METUS</h4>
-     <h3 class="news2">FORUM SECTION</h3>
-     <p class="ns2"></p>
+     </div>
+     <div class="raptors">
+       <ul class="pdd
 
-   </div>
+       ">
+         <li class="all"><i class=" far4 fab fa-android"></i></li>
+         <li class="raptop-p">Andriod Forum</li>
+       </ul>
 
- </section>
+     </div>
 
- <section class="sect9">
-   <div class="raptors">
-     <ul>
-       <li class="all"><i class="far  far4 fa-sticky-note"></i></li>
-       <li class="raptop-p">News & Community</li>
-     </ul>
+   </section>
+   <section class="sect10">
+     <div class="raptors">
+       <ul>
+         <li class="all"><i class=" far4 fas fa-coffee"></i></li>
+         <li class="raptop-p">General Discussion</li>
+       </ul>
 
-   </div>
-   <div class="raptors">
-     <ul>
-       <li class="all"><i class="far4 fab  fa-apple"></i></li>
-       <li class="raptop-p">Apple Forum</li>
-     </ul>
+     </div>
+     <div class="raptors">
+       <ul>
+         <li class="all"><i class="far4 fas fa-dice-d6"></i></li>
+         <li class="raptop-p">App & Software</li>
+       </ul>
+     </div>
+     <div class="raptors">
+       <ul>
+         <li class="all"><i class=" far4 fas fa-laptop"></i></li>
+         <li class="raptop-p">Gadjets & Stuff</li>
+       </ul>
 
-   </div>
-   <div class="raptors">
-     <ul>
-       <li class="all"><i class=" far4 fab fa-microsoft"></i></li>
-       <li class="raptop-p">Microsoft Forum</li>
-     </ul>
+     </div>
+     <div class="raptors">
+       <ul class="pdd
 
-   </div>
-   <div class="raptors">
-     <ul class="pdd
-
-     ">
-       <li class="all"><i class=" far4 fab fa-android"></i></li>
-       <li class="raptop-p">Andriod Forum</li>
-     </ul>
-
-   </div>
-
- </section>
- <section class="sect10">
-   <div class="raptors">
-     <ul>
-       <li class="all"><i class=" far4 fas fa-coffee"></i></li>
-       <li class="raptop-p">General Discussion</li>
-     </ul>
-
-   </div>
-   <div class="raptors">
-     <ul>
-       <li class="all"><i class="far4 fas fa-dice-d6"></i></li>
-       <li class="raptop-p">App & Software</li>
-     </ul>
-   </div>
-   <div class="raptors">
-     <ul>
-       <li class="all"><i class=" far4 fas fa-laptop"></i></li>
-       <li class="raptop-p">Gadjets & Stuff</li>
-     </ul>
-
-   </div>
-   <div class="raptors">
-     <ul class="pdd
-
-     ">
-       <li class="all"><i class="fas far4 fa-wrench"></i></li>
-       <li class="raptop-p">Tutorials & Guides</li>
-     </ul>
-
-   </div>
-
-
- </section>
- <section class="sect11">
-
-   <div class="sect7jnr">
-     <h4 class="pdf">GO TO OUR FORUM <i class=" fas fa-arrow-right"></i></h4>
-
-   </div>
-
- </section>
- <section class="sect12">
-   <div class="jujubi">
-     <div class="juju-words">
-
-       <h2>Hey! Join to our Community</h2>
-
-       <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inserunt mollit anim id est laborum.</p>
-
-       <button class="btn-no">SIGN UP  <i class="fas fa-chevron-right"></i></button>
+       ">
+         <li class="all"><i class="fas far4 fa-wrench"></i></li>
+         <li class="raptop-p">Tutorials & Guides</li>
+       </ul>
 
      </div>
 
 
-   </div>
+   </section>
+   <section class="sect11">
+
+     <div class="sect7jnr">
+       <h4 class="pdf">GO TO OUR FORUM <i class=" fas fa-arrow-right"></i></h4>
+
+     </div>
+
+   </section>
+   <section class="sect12">
+     <div class="jujubi">
+       <div class="juju-words">
+
+         <h2>Hey! Join to our Community</h2>
+
+         <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inserunt mollit anim id est laborum.</p>
+
+         <button class="btn-no">SIGN UP  <i class="fas fa-chevron-right"></i></button>
+
+       </div>
 
 
- </section>
- <section class="sect13">
-   <div class="set13">
-     <h2>Subscribe to our Newsletter</h2>
-     <input type="text" placeholder="Insert your Email..">
-     <button class="btbt" >SEND</button>
-
-   </div>
-
- </section>
- <section class="sect14">
-
- </section>
-  </main>
-  <!-- main section end -->
-
-  <!-- footer -->
-  <footer>
-  
+     </div>
 
 
+   </section>
+   <section class="sect13">
+     <div class="set13">
+       <h2>Subscribe to our Newsletter</h2>
+       <input type="text" placeholder="Insert your Email..">
+       <button class="btbt" >SEND</button>
 
-  </footer>
-  <!-- footer -->
+     </div>
+
+   </section>
+   <section class="sect14">
+     <div class="brunz">
+       <h4>AVADA TECH FORUM</h4>
+       <p class="f-list pd col">{{ fr  }}</p>
+
+     </div>
+     <div class="brunz">
+       <h4>POPULAR TOPICS</h4>
+       <ul class="f-list" v-for="l in lateR">
+         <li> <i class="fas fa-chevron-right"></i> {{l}}</li>
+
+       </ul>
+
+     </div>
+     <div class="brunz">
+       <h4>RECENT TOPICS</h4>
+       <ul class="f-list" v-for="l in lateR">
+         <li> <i class="fas fa-chevron-right"></i> {{l}}</li>
+
+       </ul>
+
+     </div>
+     <div class="brunz">
+       <h4>LATEST REPLIES</h4>
+       <ul class="f-list" v-for="l in lateR">
+         <li> <i class="fas fa-chevron-right"></i> {{l}}</li>
+
+       </ul>
+
+     </div>
+
+   </section>
+   <section class="sect15">
+     <div class="left-f">
+      <p>Copyright 2012-2021 | Avada Theme by <strong>Theme Fusion</strong>  | All Rights Reserved | Powered by <strong>WordPress</strong>  </p>
+     </div>
+     <div class="right-f">
+       <ul>
+         <li><i class="fab blue fa-facebook"></i></li>
+         <li><i class="fab ligb fa-twitter"></i></li>
+         <li><i class="fab lg fa-instagram-square"></i></li>
+         <li><i class="fab red fa-youtube"></i></li>
+       </ul>
+
+     </div>
+
+   </section>
+    </main>
+    <!-- main section end -->
+
+    <!-- footer -->
+    <footer>
 
 
-</body>
+
+
+    </footer>
+    <!-- footer -->
+  <script src="js/script.js" charset="utf-8"></script>
+
+  </body>
+</div>
+
+
 
 </html>
